@@ -1,3 +1,3 @@
-# http-errors
+# http-base-errors
 
-Error base types for commen HTTP equivalent errors.
+Error base types for common HTTP equivalent errors.
