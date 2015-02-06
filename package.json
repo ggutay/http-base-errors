@@ -1,19 +1,19 @@
 {
   "name": "http-base-errors",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Error base types for common HTTP equivalent errors.",
   "author": "Phillip Clark <phillip@flitbit.com>",
   "private": true,
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:VacationRoost/http-base-errors.git"
+    "url": "https://github.com/VacationRoost/http-base-errors"
   },
   "scripts": {
     "test": "mocha -R spec"
   },
   "dependencies": {
-    "error-base": "git://github.com/VacationRoost/error-base"
+    "error-base": "VacationRoost/error-base"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
