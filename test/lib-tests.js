@@ -1,3 +1,4 @@
+/*global it: false, describe: false, before: false, after: false, afterEach: false*/
 'use strict';
 
 var util = require('util'),
@@ -12,6 +13,32 @@ function print(it) {
 }
 
 describe('http-errors', function() {
+
+  describe('InternalServerError', function() {
+    var type = 'InternalServerError';
+    var msg = format('this is error: %s', uuid.v4());
+    var err = new errors[type](msg);
+
+    it('is an instanceof Error', function() {
+      expect(err).to.be.an(Error);
+    });
+
+    it('is an instanceof HttpError', function() {
+      expect(err).to.be.an(errors.HttpError);
+    });
+
+    it('conveys error message specified in constructor', function() {
+      expect(err.message).to.be(msg);
+    });
+
+    it('has the right HTTP status code (500)', function() {
+      expect(err.statusCode).to.be(500);
+    });
+
+    it('identifies the Error type when converted to a string', function() {
+      expect(err.toString()).to.be(format('%s: %s', type, msg));
+    });
+  });
 
   describe('BadRequestError', function() {
     var type = 'BadRequestError';

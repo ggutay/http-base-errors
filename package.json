@@ -1,6 +1,6 @@
 {
   "name": "http-base-errors",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Error base types for common HTTP equivalent errors.",
   "author": "Phillip Clark <phillip@flitbit.com>",
   "private": true,
