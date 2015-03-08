@@ -13,7 +13,8 @@
     "test": "mocha -R spec"
   },
   "dependencies": {
-    "error-base": "LeisureLink/error-base"
+    "error-base": "LeisureLink/error-base",
+    "foldero": "^0.1.0"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
