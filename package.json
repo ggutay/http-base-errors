@@ -7,13 +7,13 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com:LeisureLink/http-base-errors.git"
+    "url": "git://github.com/LeisureLink/http-base-errors.git"
   },
   "scripts": {
     "test": "mocha -R spec"
   },
   "dependencies": {
-    "error-base": "git://github.com:LeisureLink/error-base.git",
+    "error-base": "git://github.com/LeisureLink/error-base.git",
     "foldero": "^0.1.0"
   },
   "devDependencies": {
